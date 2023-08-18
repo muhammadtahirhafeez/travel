@@ -10,8 +10,8 @@ import img4 from '../../Assets/img4.jpg'
 import img5 from '../../Assets/img5.jpeg'
 import img6 from '../../Assets/img6.jpeg'
 import img7 from '../../Assets/img7.jpg'
-import img8 from '../../Assets/img8.png'
-import img9 from '../../Assets/img9.jpg'
+// import img8 from '../../Assets/img8.png'
+// import img9 from '../../Assets/img9.jpg'
 
 
 const Data = [
@@ -90,24 +90,24 @@ description: 'The Option of Romance, Bora Bora is one of the best travel desitna
 },
 
 
-{
-  id:8,
-  imgSrc: img8,
-  destTitle:'Taj Mahal',
-  location : 'India',
-  grade: ' CULTURE RELAX',
-  fees: '$900',
-  description: 'The Option of Romance, Bora Bora is one of the best travel desitnations in the AudioWorkletNode. The place is known for it Luxurious stays and advebturous activities.'
-  },
+// {
+//   id:8,
+//   imgSrc: img8,
+//   destTitle:'Taj Mahal',
+//   location : 'India',
+//   grade: ' CULTURE RELAX',
+//   fees: '$900',
+//   description: 'The Option of Romance, Bora Bora is one of the best travel desitnations in the AudioWorkletNode. The place is known for it Luxurious stays and advebturous activities.'
+//   },
 
-{  id:9,
-  imgSrc: img9,
-  destTitle:'Bali Island',
-  location : 'Indonesia',
-  grade: ' CULTURE RELAX',
-  fees: '$500',
-  description: 'The Option of Romance, Bora Bora is one of the best travel desitnations in the AudioWorkletNode. The place is known for it Luxurious stays and advebturous activities.'
-  },
+// {  id:9,
+//   imgSrc: img9,
+//   destTitle:'Bali Island',
+//   location : 'Indonesia',
+//   grade: ' CULTURE RELAX',
+//   fees: '$500',
+//   description: 'The Option of Romance, Bora Bora is one of the best travel desitnations in the AudioWorkletNode. The place is known for it Luxurious stays and advebturous activities.'
+//   },
 
 
 ]
