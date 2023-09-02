@@ -15,10 +15,11 @@
  } 
 
  .main
- {
-    width: 100%;
-    
+ {    
     .secTitle{
+        margin-bottom:3rem;
+        
+
         .title{
             position: relative;
             width: max-content;
@@ -48,7 +49,7 @@
         .singleDestination
         {   
             padding: 1.2rem;
-            height: 100%;
+            height: auto;
             display: grid;
             row-gap: 10px;
             border-radius: 10px;
@@ -108,6 +109,67 @@
                     font-weight: 400;
 
                    }
+                }
+                
+                .fees
+                {
+                    width:100%;
+                    justify-content: space-between;
+                    // padding: 1rem;
+                    margin:1rem 0;
+                    border-top: 1.5px solid var(--greyText);
+                    border-bottom: 1.5px solid var(--greyText);
+
+                    .grade
+                    {
+                        color:var(--textColor);
+                        max-width: 100px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        small
+                        {
+                            text-align: center;
+                            background: var(--gradientColor);
+                            border-radius: 1rem;
+                            color:var(--whiteColor);
+                            padding:1px 10px;
+                            font-size: 10px;
+                            margin-left: 10px;
+                        
+                        }
+
+                    }
+
+                    .price
+                    {
+                        font-size:2rem;
+                        color: var(--blackColor);
+                    }
+                }
+
+                .desc
+                {
+                    font-size: 13.5px;
+                    color:var(--blackColor);
+                    font-weight:500;
+                }
+
+                .btn
+                {
+                    margin-top:1rem;
+                    color:var(--whiteColor);
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap:0.5rem;
+
+                    .icon
+                    {
+                        align-self: center;
+                        font-size: 16px;
+                    }
                 }
             }
             
