@@ -140,7 +140,7 @@ const Main = () => {
                         <span className="continent flex"><HiLocationMarker className="icon"/><span className='name'>{location}</span></span>
                           
 
-                        <div className="fees felx">
+                        <div className="fees flex">
                           <div className="grade">
                             <span>{grade}<small> +1 </small></span>
                           </div>

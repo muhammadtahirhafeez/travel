@@ -11,10 +11,8 @@ const Navbar = () => {
   const [active, setActive] = useState('navBar')
 
 // Showing navbar by clicking on Toggle icon
-  const showNav =()=>
-{
-  setActive('navBar activeNavbar')
-}
+  const showNav =()=>setActive('navBar activeNavbar')
+
 
 // Removing navbar by clicking on Close icon
 const removeNavbar =()=>
