@@ -1,15 +1,19 @@
 :root {
-  --PrimaryColor:hsl(199, 100%, 33%);
-  --SecondaryColor:hsl(187,85%,43%);
-  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-  --whiteColor:hsl(0,0%, 100%);
-  --whiteColorDeam:hsl(0,0%,93%);
-  --blackColor:hsl(201, 33%, 16%);
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
   --greyText: rgb(190, 190, 190);
-  --inputColor:rgb(239, 239, 239);
+  --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
-  --carBG:rgb(225,225,235);
+  --carBG: rgb(225, 225, 235);
 }
 
 .home {
@@ -88,6 +92,7 @@
 .home .cardDiv .label_total .total {
   color: var(--textColor);
   font-size: 20px;
+  margin: 0px;
 }
 .home .cardDiv .input {
   height: auto;
@@ -150,4 +155,61 @@
 }
 .home .homeFootericons .icon:hover {
   color: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 500px) {
+  .home .homeContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .home .homeContent .textDiv .homeTitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home .homeContent .textDiv .homeTitle::after {
+    position: absolute;
+    content: "";
+    background: var(--SecondaryColor);
+    width: 145px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .home .homeContent .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .home .homeContent .cardDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .home {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 90vh;
+  }
+  .home .homeContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .home .homeContent .carDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home .homeContent .carDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .carDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .homeContent .carDiv .searchOptions span {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=Home.css.map */
