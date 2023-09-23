@@ -1,12 +1,18 @@
-import React,{useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Navbar.css'
 import {MdOutlineTravelExplore} from "react-icons/md"
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Navbar = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
 
   const [active, setActive] = useState('navBar')
 
@@ -38,7 +44,7 @@ return (
 
               <div className={active}>
 
-                <ul className="navLists flex">
+                <ul data-aos="fade-right" className="navLists flex">
                   
                     <li className="navItem">
                     <a href="#" className="navLink">Home</a>
